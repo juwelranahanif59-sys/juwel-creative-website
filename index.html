@@ -3,122 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JR Digital Marketing</title>
+  <title>Juwel Creative Academy | Graphic Designer</title>
+  <meta name="description" content="Professional graphic design portfolio website for Juwel Creative Academy. Fiverr and Upwork designer for logo, brand identity, business card, banner, brochure and print design." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body{background:#f7f9fc;color:#111827;overflow-x:hidden;}
-    html{scroll-behavior:smooth;}
-    header{background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;}
-    nav{width:90%;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px 0;}
-    .logo{display:flex;align-items:center;gap:10px;}
-    .logo img{width:55px;border-radius:10px;}
-    .logo h2{font-size:22px;color:#2563eb;}
-    .menu{display:flex;gap:25px;}
-    .menu a{text-decoration:none;color:#111827;font-weight:500;transition:0.3s;}
-    .menu a:hover{color:#22c55e;}
-    .hero{width:90%;margin:auto;min-height:90vh;display:flex;justify-content:space-between;align-items:center;gap:40px;padding:60px 0;}
-    .hero-text h1{font-size:55px;line-height:1.2;margin-bottom:20px;color:#111827;}
-    .hero-text span{color:#2563eb;}
-    .hero-text p{font-size:18px;line-height:1.8;margin-bottom:30px;color:#4b5563;}
-    .btn{display:inline-block;padding:15px 30px;background:#22c55e;color:#fff;text-decoration:none;border-radius:50px;font-weight:600;transition:0.3s;box-shadow:0 10px 20px rgba(34,197,94,0.2);}
-    .btn:hover{transform:translateY(-5px);background:#16a34a;}
-    .hero-image img{width:100%;max-width:500px;animation:float 4s ease-in-out infinite;}
-    @keyframes float{0%{transform:translateY(0px)}50%{transform:translateY(-20px)}100%{transform:translateY(0px)}}
-    section{padding:80px 10%;}
-    .section-title{text-align:center;margin-bottom:50px;}
-    .section-title h2{font-size:40px;color:#111827;margin-bottom:10px;}
-    .section-title p{color:#6b7280;}
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-    .service-box{background:#fff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.06);transition:0.4s;text-align:center;}
-    .service-box:hover{transform:translateY(-10px);}
-    .service-box h3{margin:20px 0 10px;color:#2563eb;}
-    .service-box p{color:#6b7280;line-height:1.7;}
-    .dollar-rate{background:#2563eb;color:#fff;border-radius:25px;text-align:center;padding:50px;}
-    .dollar-rate h2{font-size:42px;margin-bottom:15px;}
-    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
-    .portfolio img{width:100%;border-radius:20px;transition:0.4s;box-shadow:0 10px 20px rgba(0,0,0,0.08);}
-    .portfolio img:hover{transform:scale(1.05);}
-    .review-section{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
-    .review-box{background:#fff;padding:30px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.06);}
-    .review-box h3{color:#22c55e;margin-bottom:15px;}
-    .contact-box{background:#111827;color:#fff;text-align:center;border-radius:25px;padding:60px 30px;}
-    .contact-box h2{font-size:42px;margin-bottom:20px;}
-    footer{background:#0f172a;color:#fff;text-align:center;padding:20px;margin-top:60px;}
-    .whatsapp{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#fff;width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:30px;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,0.2);z-index:999;}
-    @media(max-width:900px){.hero{flex-direction:column;text-align:center}.hero-text h1{font-size:38px}.menu{display:none}}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <nav>
-    <div class="logo">
-      <img src="logo.png" alt="JR Logo">
-      <h2>JR Digital Marketing</h2>
-    </div>
-    <div class="menu">
-      <a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+<header class="header">
+  <nav class="container nav">
+    <a href="#home" class="brand">
+      <img src="logo.png" alt="Juwel Creative Academy Logo">
+      <span>juwel<span>creative</span><small>ACADEMY</small></span>
+    </a>
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <div id="navLinks" class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#marketplace">Fiverr & Upwork</a>
+      <a href="#contact">Contact</a>
+      <a class="hire" href="https://wa.me/8801316112465" target="_blank">Hire Me</a>
     </div>
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h1>Grow Your Business With <span>JR Digital Marketing</span></h1>
-    <p>Facebook Posting, YouTube Boosting, Dollar Sell, Digital Card Sell এবং বিভিন্ন Digital Marketing Service দ্রুত ও নিরাপদভাবে পেতে এখনই যোগাযোগ করুন।</p>
-    <a href="https://wa.me/8801316112465" class="btn">WhatsApp Now</a>
-  </div>
-  <div class="hero-image">
-    <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="Digital Marketing">
-  </div>
-</section>
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <p class="tag">HELLO, I'M JUWEL</p>
+        <h1>Creative Graphic Designer for <span>Modern Brands</span></h1>
+        <p class="bangla">আমি আন্তর্জাতিক ক্লায়েন্টদের জন্য প্রফেশনাল ও আধুনিক গ্রাফিক ডিজাইন সার্ভিস প্রদান করি।</p>
+        <p class="desc">I create premium logo design, brand identity, business card, roll-up banner, flyer, brochure, social media and print-ready designs for worldwide clients.</p>
+        <div class="btns">
+          <a class="btn primary" href="https://wa.me/8801316112465" target="_blank">Hire Me Now</a>
+          <a class="btn outline" href="#portfolio">View Portfolio</a>
+        </div>
+        <div class="available">
+          <span>Available on</span>
+          <b>fiverr<span>.</span></b>
+          <b class="upwork">upwork</b>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <div class="circle"></div><div class="ring"></div>
+        <span class="tool ps">Ps</span><span class="tool ai">Ai</span>
+        <img src="profile.png" alt="Juwel Graphic Designer" />
+        <div class="stats">
+          <div><b>5+</b><span>Years Experience</span></div>
+          <div><b>500+</b><span>Projects Completed</span></div>
+          <div><b>1500+</b><span>Fiverr Reviews</span></div>
+          <div><b>700+</b><span>Upwork Reviews</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="services">
-  <div class="section-title"><h2>Our Services</h2><p>Professional Digital Marketing Solutions</p></div>
-  <div class="services">
-    <div class="service-box"><h3>Facebook Posting</h3><p>Professional Facebook Posting & Social Media Content Service.</p></div>
-    <div class="service-box"><h3>YouTube Boosting</h3><p>Boost your YouTube Video Views, Subscribers & Engagement.</p></div>
-    <div class="service-box"><h3>Dollar Sell</h3><p>Trusted Dollar Buy & Sell Service with Fast Support.</p></div>
-    <div class="service-box"><h3>Digital Card Sell</h3><p>Premium Digital Card Selling Service Available.</p></div>
-  </div>
-</section>
+  <section class="trusted">
+    <div class="container trusted-box reveal">
+      <p>Trusted by clients worldwide</p>
+      <b>Fiverr</b><b>Upwork</b><b>Freelancer</b><b>Designhill</b><b>GraphicRiver</b>
+    </div>
+  </section>
 
-<section>
-  <div class="dollar-rate">
-    <h2>Today's Dollar Rate</h2>
-    <p>Buy Rate: 121 BDT | Sell Rate: 123 BDT</p><br>
-    <a href="https://wa.me/8801316112465" class="btn">Get Rate Now</a>
-  </div>
-</section>
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="center reveal"><p class="tag">WHAT I DO</p><h2>My Services</h2></div>
+      <div class="service-grid">
+        <article class="card reveal"><i>✦</i><h3>Logo Design</h3><p>Modern and memorable logo design for your brand identity.</p></article>
+        <article class="card reveal"><i>✦</i><h3>Business Card</h3><p>Premium business card design with print-ready files.</p></article>
+        <article class="card reveal"><i>✦</i><h3>Roll Up Banner</h3><p>Professional banner design for business promotion.</p></article>
+        <article class="card reveal"><i>✦</i><h3>Flyer Design</h3><p>Creative flyer design for events and marketing campaigns.</p></article>
+        <article class="card reveal"><i>✦</i><h3>Brochure Design</h3><p>Company profile, catalog and brochure layout design.</p></article>
+        <article class="card reveal"><i>✦</i><h3>Social Media Design</h3><p>Post, ad, story and cover design for social platforms.</p></article>
+      </div>
+    </div>
+  </section>
 
-<section id="portfolio">
-  <div class="section-title"><h2>Portfolio Gallery</h2><p>Our Recent Work & Digital Marketing Projects</p></div>
-  <div class="portfolio">
-    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="portfolio">
-    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=1200&auto=format&fit=crop" alt="portfolio">
-    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="portfolio">
-  </div>
-</section>
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="portfolio-head reveal"><div><p class="tag">MY WORK</p><h2>Latest Portfolio</h2></div><a href="#contact" class="btn outline">Request Full Portfolio</a></div>
+      <div class="portfolio-grid">
+        <article class="project p1 reveal"><span>LOGO</span><h3>Techno Technology</h3></article>
+        <article class="project p2 reveal"><span>POST</span><h3>Coffee House Design</h3></article>
+        <article class="project p3 reveal"><span>BANNER</span><h3>Digital Marketing Agency</h3></article>
+        <article class="project p4 reveal"><span>FLYER</span><h3>Travel The World</h3></article>
+        <article class="project p5 reveal"><span>BRAND</span><h3>Gravity Fitness Center</h3></article>
+        <article class="project p6 reveal"><span>CARD</span><h3>Business Card Design</h3></article>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <div class="section-title"><h2>Fiverr & Upwork Reviews</h2><p>Trusted By International Clients</p></div>
-  <div class="review-section">
-    <div class="review-box"><h3>Fiverr 1500+ Reviews</h3><p>We provide premium quality digital marketing services with fast delivery and professional support.</p></div>
-    <div class="review-box"><h3>Upwork 700+ Reviews</h3><p>Trusted freelancer with long-term client relationships and high-quality service.</p></div>
-  </div>
-</section>
+  <section id="marketplace" class="section marketplace">
+    <div class="container">
+      <div class="center reveal">
+        <p class="market-tag">★ TOP RATED FREELANCER</p>
+        <h2>Fiverr & <span>Upwork</span></h2>
+        <p class="desc center-text">Client satisfaction and quality work are my top priorities.</p>
+      </div>
+      <div class="market-grid">
+        <div class="market-card reveal">
+          <h3>fiverr<span>.</span></h3><p class="badge">Top Rated Seller</p>
+          <div class="stars">★★★★★ <small>5.0 • 1500+ Reviews</small></div>
+          <ul><li>100% Client Satisfaction</li><li>High Quality Design</li><li>Fast Delivery</li><li>Print Ready Files</li></ul>
+          <a href="#contact">View Fiverr Profile</a>
+        </div>
+        <div class="market-card reveal">
+          <h3 class="upwork">upwork</h3><p class="badge">Top Rated Freelancer</p>
+          <div class="stars">★★★★★ <small>5.0 • 700+ Reviews</small></div>
+          <ul><li>100% Job Success</li><li>Professional Communication</li><li>On-Time Delivery</li><li>Long-Term Support</li></ul>
+          <a href="#contact">View Upwork Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <div class="contact-box">
-    <h2>Contact Us</h2>
-    <p>WhatsApp / Call: 01316112465</p><br>
-    <a href="https://wa.me/8801316112465" class="btn">Message On WhatsApp</a>
-  </div>
-</section>
+  <section class="section skills">
+    <div class="container skill-grid">
+      <div class="why reveal"><p class="tag">WHY CHOOSE ME</p><h2>Premium Quality with Fast Delivery</h2><ul><li>Fast Delivery</li><li>Unlimited Revisions</li><li>Professional Communication</li><li>High Quality Design</li><li>24/7 Support</li></ul></div>
+      <div class="skill-card reveal">
+        <p class="tag">MY SKILLS</p><h2>Design Expertise</h2>
+        <div class="skill"><span>Adobe Photoshop <b>99%</b></span><i><em style="width:99%"></em></i></div>
+        <div class="skill"><span>Adobe Illustrator <b>99%</b></span><i><em style="width:99%"></em></i></div>
+        <div class="skill"><span>Branding Design <b>97%</b></span><i><em style="width:97%"></em></i></div>
+        <div class="skill"><span>Print Design <b>98%</b></span><i><em style="width:98%"></em></i></div>
+        <div class="skill"><span>Brochure Design <b>98%</b></span><i><em style="width:98%"></em></i></div>
+      </div>
+    </div>
+  </section>
 
-<footer><p>© 2026 JR Digital Marketing | All Rights Reserved</p></footer>
-<a href="https://wa.me/8801316112465" class="whatsapp">✆</a>
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="tag">LET'S WORK TOGETHER</p><h2>Have a Project in Mind?</h2><p class="desc">Send me a message for your next design project.</p>
+        <div class="contact-list">
+          <p><b>Phone</b><a href="tel:01316112465">01316112465</a></p>
+          <p><b>Email</b><a href="mailto:juwelranahanif59@gmail.com">juwelranahanif59@gmail.com</a></p>
+          <p><b>Location</b><span>Mirpur 12, Dhaka, Bangladesh</span></p>
+        </div>
+      </div>
+      <form class="contact-form reveal" action="mailto:juwelranahanif59@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><a href="#home" class="brand"><img src="logo.png" alt="Logo"><span>juwel<span>creative</span><small>ACADEMY</small></span></a><p>Professional graphic design and branding service.</p></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div>
+    <div><h4>Services</h4><p>Logo Design</p><p>Business Card</p><p>Roll Up Banner</p><p>Brochure Design</p></div>
+    <div><h4>Contact</h4><p>01316112465</p><p>juwelranahanif59@gmail.com</p><p>Mirpur 12, Dhaka</p></div>
+  </div>
+  <div class="copy">© 2026 Juwel Creative Academy. All Rights Reserved.</div>
+</footer>
+<a class="whatsapp" href="https://wa.me/8801316112465" target="_blank">☏</a>
+<script src="script.js"></script>
 </body>
 </html>
